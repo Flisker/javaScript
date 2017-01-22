@@ -8,15 +8,12 @@ function dropdownStyles(){ //this is function to change the <div> tag with id 'c
     var value = this.value;
 
 //*    element.style[id] = value;
-
-    document.getElementById('content').style[id] = value;
+    document.getElementById('content').style[this.id] = value; //this will change value of element with id 'content'
 }
 
 for( var i = 0; i < arraySelect.length; i++ ){
 
-    console.log(arraySelect[i])
     arraySelect[i].addEventListener( 'change', dropdownStyles );
-
 }
 
 
